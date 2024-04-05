@@ -59,7 +59,7 @@ class _MyHeaderState extends State<MyHeader> {
               child: Stack(
                 children: <Widget>[
                   Positioned(
-                    top: (widget.offset < 0) ? 0 : widget.offset,
+                    top: -widget.offset * 0.5,
                     child: SvgPicture.asset(
                       widget.image,
                       width: 230,
